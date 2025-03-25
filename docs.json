@@ -20,6 +20,12 @@
               "quickstart",
               "development"
             ]
+          },          
+          {
+            "group": "Candidate Experience",
+            "pages": [
+              "candidate-experience/jobsite"
+            ]
           },
           {
             "group": "Essentials",
