@@ -22,6 +22,12 @@
             ]
           },          
           {
+            "group": "Künstliche Intelligenz",
+            "pages": [
+              "artifical-intelligence/intro"
+            ]
+          },          
+          {
             "group": "Candidate Experience",
             "pages": [
               "candidate-experience/jobsite"
