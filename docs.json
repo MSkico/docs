@@ -11,57 +11,47 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Deep Dives",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Plattform",
             "pages": [
-              "introduction",
-              "quickstart",
-              "development"
+              "plattform/intelligente-jobsites",
+              "plattform/ki-sourcing-agent",
+              "plattform/ats-integration"
             ]
-          },          
+          },
           {
             "group": "Künstliche Intelligenz",
             "pages": [
-              "artificial-intelligence/intro"
-            ]
-          },          
-          {
-            "group": "Candidate Experience",
-            "pages": [
-              "candidate-experience/jobsite"
+              "ki/unsere-ki",
+              "ki/ki-im-recruiting",
+              "ki/anbietervergleich"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Insights",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
+              "insights/aktiv-vs-passiv",
+              "insights/inhouse-vs-partner",
+              "insights/kosten-und-kpis"
             ]
           },
           {
-            "group": "Endpoint Examples",
+            "group": "Compliance",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "compliance/datenschutz",
+              "compliance/ki-regulierung",
+              "compliance/it-sicherheit",
+              "compliance/einkauf"
+            ]
+          },
+          {
+            "group": "Events",
+            "pages": [
+              "events/passive-pulse-26",
+              "events/webinare",
+              "events/veranstaltungen"
             ]
           }
         ]
