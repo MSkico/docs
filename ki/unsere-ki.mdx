@@ -1,5 +1,138 @@
 ---
-title: 'KI-Modell'
-description: 'Description of your new AI.'
+title: 'Unser KI-Modell'
+description: 'Die skillconomy-KI ist eine hochinnovative Eigenentwicklung und grenzt sich deutlich von anderen Anbietern ab.'
 ---
 
+# Architektur und Trainingsdaten unserer KI-Modelle
+
+skillconomy geht über die Integration externer KI-Tool wie ChatGPT weit hinaus. Unser System basiert auf einem eigenentwickelten, großskaligen Sprachmodell, das speziell für die Anforderungen des deutschsprachigen Arbeitsmarktes und den Einsatz im Active Sourcing entwickelt wurde.
+
+Das Modell ist zentraler Bestandteil unserer Plattform und wurde gezielt darauf trainiert, Profile und Anforderungen auf semantischer Ebene miteinander abzugleichen – unter Einbeziehung von Informationen wie Branche, Unternehmensgröße und insbesondere auch **konkreten Unternehmen**.
+
+---
+
+## Abgrenzung zu anderen Anbietern
+
+Viele Systeme im Markt setzen auf generische KI-Modelle, die auf breite Textcorpora (z. B. Wikipedia, Common Crawl) trainiert wurden. Diese Modelle sind in der Regel nicht auf den Kontext von Stellenprofilen, Karriereverläufen oder branchenspezifischen Anforderungen spezialisiert.
+
+Unsere Architektur unterscheidet sich in folgenden Punkten:
+
+- **Eigene Modellentwicklung**: vollständige Kontrolle über Architektur, Training, Evaluation und Integration
+- **Spezialisierter Trainingsfokus**: gezieltes Training auf deutschsprachigen Arbeitsmarkt- und HR-Daten
+- **Kontextwissen über Anforderungen, Karrierepfade und konkrete Unternehmen**
+- **Hosting und Datenhaltung in der EU** gemäß DSGVO und den Vorgaben des EU AI Act
+
+---
+
+## Technologische Grundlagen: Wie das Modell Informationen versteht
+
+Unsere KI basiert auf einem modernen Machine-Learning-Ansatz namens **Transformer-Architektur**. Diese Architektur wurde ursprünglich für die Verarbeitung von Text entwickelt, eignet sich aber ebenso gut für andere sequenzielle Daten – darunter auch **teilstrukturierte Informationen** wie Stellenprofile und berufliche Werdegänge.
+
+### Wie funktioniert ein Transformer-Modell?
+
+Ein Transformer-Modell verarbeitet Daten als eine **Abfolge von Tokens**. Ein Token kann ein einzelnes Wort, ein Begriff, eine Abkürzung oder ein strukturierter Eintrag wie ein Jobtitel, Skill oder Zeitintervall sein.
+
+Im Unterschied zu klassischen Verfahren, die Informationen Schritt für Schritt linear verarbeiten, bewertet ein Transformer-Modell die Beziehungen **zwischen allen Tokens gleichzeitig**. Es analysiert, **welche Elemente inhaltlich zusammengehören** und **welche Bedeutung sie im Gesamtkontext** einer Sequenz haben. Diese Technik wird *Attention-Mechanismus* genannt.
+
+Beispiel:  
+In einer Beschreibung wie  
+`Position: Kreditanalyst / Erfahrung: Basel III, Jahresabschlüsse / Tools: SAP, Excel / Arbeitgeber: Commerzbank AG`  
+lernt das Modell nicht nur, dass „Basel III“ und „Kreditanalyst“ häufig gemeinsam auftreten, sondern auch, dass diese Kombination **im Kontext eines bestimmten Arbeitgebers** andere Bedeutungsschwerpunkte haben kann – z. B. stärker regulierte Arbeitsumgebungen oder spezifische Softwarelösungen.
+
+### Was bedeutet „lernen“ in diesem Kontext?
+
+Das Modell wird trainiert, indem es Millionen solcher Datenbeispiele verarbeitet. Dabei erkennt es **statistische Regelmäßigkeiten**: Welche Kombinationen von Tokens treten häufig gemeinsam auf? In welchen Kontexten verändern Begriffe ihre Bedeutung? Welche Sequenzen deuten auf bestimmte Rollen, Skills oder Karriereschritte hin?
+
+Mit jedem Trainingsdurchlauf verfeinert das Modell sein „Verständnis“ davon, **welche Informationen innerhalb einer Beschreibung relevant** sind – und **wie sie zueinander in Beziehung stehen**. Es entsteht kein inhaltliches Wissen im menschlichen Sinne, sondern ein **mathematisch erfasstes, kontextuelles Modell von Bedeutungszusammenhängen**.
+
+---
+
+## Unternehmensspezifischer Kontext
+
+Ein zentrales Unterscheidungsmerkmal unseres Modells besteht darin, dass es nicht nur allgemeine Branchenmerkmale oder Größenklassen berücksichtigt, sondern auch **konkrete Unternehmen** als Kontextelemente integriert.
+
+Das bedeutet: Wenn unser Modell eine Rolle, einen Skill oder einen Abschluss sieht, bewertet es diese **nicht isoliert**, sondern im Zusammenspiel mit dem Arbeitgeber – sowohl für bisherige Stationen im Lebenslauf als auch für Zielpositionen in offenen Stellen.
+
+### Kontextuelle Interpretation: Ein Beispiel
+
+Der Skill **„Kubernetes“** ist ein häufiges Anforderungskriterium in technischen Rollen – doch seine Bedeutung variiert je nach Unternehmens- und Aufgaben-Kontext erheblich:
+
+- In einem **Cloud-nativen Tech-Unternehmen** wie „Google Cloud“ oder „Hetzner“ ist Kubernetes typischerweise zentraler Bestandteil produktiver Systemarchitekturen. Der Skill deutet hier auf tiefgehende Erfahrung in Container-Orchestrierung, CI/CD-Pipelines und Infrastructure-as-Code hin.
+  
+- Bei einem **mittelständischen Industrieunternehmen** mit moderner IT-Abteilung (z. B. „Trumpf“ oder „Krones“) weist derselbe Skill meist auf die Fähigkeit hin, vorhandene On-Prem- oder Hybrid-Infrastrukturen zu modernisieren und in DevOps-Prozesse zu überführen – mit oft stärkerem Fokus auf Automatisierung und Stabilität.
+
+- In einer **Beratungsrolle** bei Unternehmen wie „Capgemini“ oder „Zühlke“ wiederum deutet Kubernetes-Kompetenz häufig auf Projekt- und Technologiebreite hin – etwa die Fähigkeit, Kubernetes in unterschiedlichen Kundensystemen einzuführen, zu dokumentieren und Wissen zu transferieren.
+
+Unser Modell erkennt diese Unterschiede, **weil es auf Grundlage realer Daten gelernt hat, wie konkrete Unternehmen Skills bewerten, einsetzen und in spezifische Rollen einbetten**.
+
+Diese Fähigkeit zur **kontextuellen Bewertung einzelner Begriffe** – sei es ein Skill, ein Jobtitel oder eine Station – ermöglicht eine tiefere inhaltliche Einordnung und damit ein **signifikant präziseres Matching** im Vergleich zu regel- oder keywordbasierten Verfahren.
+
+
+---
+
+## Trainingsdaten und Modellgröße
+
+Das Modell wurde in drei Phasen trainiert:
+
+1. **Pretraining** auf allgemeinen deutsch- und englischsprachigen Textquellen (u. a. Wikipedia, öffentliche Dokumente)
+2. **Modellspezifisches Training** auf mehreren Millionen Profilen aus dem deutschsprachigen Raum in drei Stufen mit zunehmendem Schwierigkeitsgrad
+
+Trainingsdauer: >200 GPU-Stunden auf Hochleistungshardware  
+Parameteranzahl: mehrere 100 Millionen
+
+---
+
+## Gelerntes über Anforderungsprofile
+
+Das Modell hat durch das Training auf strukturierter und unstrukturierter HR-Daten ein detailliertes Bild von Stellenanforderungen in verschiedenen Branchen, Unternehmensgrößen – und konkreten Arbeitgebern – entwickelt. Es erkennt unter anderem:
+
+- Welche Skills für bestimmte Rollen typisch oder erforderlich sind
+- Welche Softwarelösungen in bestimmten Branchen und Rollen üblicherweise eingesetzt werden
+- Welche Branchenerfahrungen häufig vorausgesetzt werden
+- Welche Ausbildungswege und Qualifikationen für bestimmte Positionen üblich sind
+- Welche Zertifizierungen als relevant gelten (z. B. PMP, CFA, ITIL)
+- In welchen Rollen Sprachkenntnisse, Reisebereitschaft oder Führungserfahrung vorausgesetzt werden
+
+---
+
+## Gelerntes über Karriereverläufe
+
+Neben der Analyse von Anforderungsprofilen wurde das Modell darauf trainiert, typische Karriereverläufe im DACH-Raum zu erkennen. Es kann Zusammenhänge und Muster identifizieren, etwa:
+
+- Welche beruflichen Stationen typischerweise aufeinander folgen (z. B. Sachbearbeitung → Teamleitung → Bereichsleitung)
+- Aus welchen Branchen oder Unternehmensarten Kandidat:innen in bestimmte Rollen wechseln
+- Welche Hochschulen oder Ausbildungseinrichtungen mit bestimmten Arbeitgebergruppen korrelieren
+- Wie lange Fach- oder Führungskräfte im Schnitt in bestimmten Positionen oder Unternehmen bleiben
+- Welche Stationen als typische Vorbereitung auf bestimmte Positionen dienen
+
+Auch hier wird der Unternehmenskontext berücksichtigt: Ein Karriereschritt bei einem bestimmten Arbeitgeber kann – je nach Branche, Marktposition und Aufgabenstruktur – ganz unterschiedliche Bedeutung haben.
+
+---
+
+## Datenschutz & Compliance
+
+Alle Trainingsdaten stammen entweder aus öffentlich zugänglichen Quellen oder wurden vertraglich zur Nutzung freigegeben. Die Datenverarbeitung erfolgt vollständig innerhalb der EU. Das Hosting der Modelle findet in zertifizierten Rechenzentren statt.
+
+Unsere Systemarchitektur ist so konzipiert, dass sie die Anforderungen der DSGVO sowie die des kommenden EU AI Act erfüllt – inklusive Nachvollziehbarkeit der Modellentscheidungen (Audit Trails) und Transparenz über Datenquellen.
+
+---
+
+## FAQ
+
+**Wie unterscheidet sich das Modell von klassischen Keyword-Suchsystemen?**  
+Während klassische Systeme auf das reine Vorkommen von Suchbegriffen angewiesen sind, erkennt unser Modell Zusammenhänge zwischen Begriffen, Rollen, Skills und Arbeitgeberkontext. Es bewertet Informationen nicht isoliert, sondern im jeweiligen Nutzungskontext.
+
+**Welche Sprachen versteht das Modell?**  
+Das Modell ist auf **deutschsprachige Inhalte** ausgerichtet, kann aber auch englische Begriffe und Mischformen korrekt verarbeiten – ein typisches Szenario in vielen Lebensläufen.
+
+**Welche Rollen werden besonders gut abgedeckt?**  
+Der Fokus liegt auf **Fach- und Führungspositionen**, insbesondere im kaufmännischen, technischen, finanznahen und beratenden Umfeld.
+
+**Wird das Modell weiterentwickelt?**  
+Ja. Die Architektur erlaubt es, die Modellbasis kontinuierlich weiterzuentwickeln und neue Datenquellen oder Anforderungen einzubeziehen. Gleichzeitig bleibt die Nachvollziehbarkeit erhalten – ein zentrales Kriterium im Umgang mit KI im Recruiting-Kontext.
+
+---
+
+## Kontakt
+
+Für technische Rückfragen oder Interesse an vertiefter Dokumentation kannst du uns jederzeit unter [support@skillconomy.de](mailto:support@skillconomy.de) erreichen.
