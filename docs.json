@@ -16,6 +16,7 @@
           {
             "group": "Plattform",
             "pages": [
+              "plattform/intro",
               "plattform/ki-sourcing-agent",
               "plattform/intelligente-jobsites",
               "plattform/ats-integration",
