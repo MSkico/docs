@@ -18,8 +18,9 @@
             "pages": [
               "plattform/ki-sourcing-agent",
               "plattform/intelligente-jobsites",
-              "plattform/sourcing-quellen",
-              "plattform/ats-integration"
+              "plattform/ats-integration",
+              "plattform/sourcing-quellen"
+              
             ]
           },
           {
@@ -45,14 +46,6 @@
               "compliance/ki-regulierung",
               "compliance/it-sicherheit",
               "compliance/einkauf"
-            ]
-          },
-          {
-            "group": "Events",
-            "pages": [
-              "events/passive-pulse-26",
-              "events/webinare",
-              "events/veranstaltungen"
             ]
           }
         ]
