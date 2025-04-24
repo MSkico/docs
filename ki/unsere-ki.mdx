@@ -24,34 +24,11 @@ Unsere Architektur unterscheidet sich in folgenden Punkten:
 
 ---
 
-## Technologische Grundlagen: Wie das Modell Informationen versteht
-
-Unsere KI basiert auf einem modernen Machine-Learning-Ansatz namens **Transformer-Architektur**. Diese Architektur wurde ursprünglich für die Verarbeitung von Text entwickelt, eignet sich aber ebenso gut für andere sequenzielle Daten – darunter auch **teilstrukturierte Informationen** wie Stellenprofile und berufliche Werdegänge.
-
-### Wie funktioniert ein Transformer-Modell?
-
-Ein Transformer-Modell verarbeitet Daten als eine **Abfolge von Tokens**. Ein Token kann ein einzelnes Wort, ein Begriff, eine Abkürzung oder ein strukturierter Eintrag wie ein Jobtitel, Skill oder Zeitintervall sein.
-
-Im Unterschied zu klassischen Verfahren, die Informationen Schritt für Schritt linear verarbeiten, bewertet ein Transformer-Modell die Beziehungen **zwischen allen Tokens gleichzeitig**. Es analysiert, **welche Elemente inhaltlich zusammengehören** und **welche Bedeutung sie im Gesamtkontext** einer Sequenz haben. Diese Technik wird *Attention-Mechanismus* genannt.
-
-Beispiel:  
-In einer Beschreibung wie  
-`Position: Kreditanalyst / Erfahrung: Basel III, Jahresabschlüsse / Tools: SAP, Excel / Arbeitgeber: Commerzbank AG`  
-lernt das Modell nicht nur, dass „Basel III“ und „Kreditanalyst“ häufig gemeinsam auftreten, sondern auch, dass diese Kombination **im Kontext eines bestimmten Arbeitgebers** andere Bedeutungsschwerpunkte haben kann – z. B. stärker regulierte Arbeitsumgebungen oder spezifische Softwarelösungen.
-
-### Was bedeutet „lernen“ in diesem Kontext?
-
-Das Modell wird trainiert, indem es Millionen solcher Datenbeispiele verarbeitet. Dabei erkennt es **statistische Regelmäßigkeiten**: Welche Kombinationen von Tokens treten häufig gemeinsam auf? In welchen Kontexten verändern Begriffe ihre Bedeutung? Welche Sequenzen deuten auf bestimmte Rollen, Skills oder Karriereschritte hin?
-
-Mit jedem Trainingsdurchlauf verfeinert das Modell sein „Verständnis“ davon, **welche Informationen innerhalb einer Beschreibung relevant** sind – und **wie sie zueinander in Beziehung stehen**. Es entsteht kein inhaltliches Wissen im menschlichen Sinne, sondern ein **mathematisch erfasstes, kontextuelles Modell von Bedeutungszusammenhängen**.
-
----
-
 ## Unternehmensspezifischer Kontext
 
 Ein zentrales Unterscheidungsmerkmal unseres Modells besteht darin, dass es nicht nur allgemeine Branchenmerkmale oder Größenklassen berücksichtigt, sondern auch **konkrete Unternehmen** als Kontextelemente integriert.
 
-Das bedeutet: Wenn unser Modell eine Rolle, einen Skill oder einen Abschluss sieht, bewertet es diese **nicht isoliert**, sondern im Zusammenspiel mit dem Arbeitgeber – sowohl für bisherige Stationen im Lebenslauf als auch für Zielpositionen in offenen Stellen.
+Das bedeutet: Wenn unser Modell eine Rolle, einen Skill oder einen Abschluss sieht, bewertet es diese **nicht isoliert**, sondern im Zusammenspiel mit dem Arbeitgeber – sowohl für bisherige Stationen im Lebenslauf als auch für mögliche Folgepositionen.
 
 ### Kontextuelle Interpretation: Ein Beispiel
 
