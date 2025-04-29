@@ -16,6 +16,7 @@
           {
             "group": "Insights",
             "pages": [
+              "insights/intro", 
               "insights/aktiv-vs-passiv",
               "insights/inhouse-vs-partner",
               "insights/kosten-und-kpis", 
@@ -25,7 +26,6 @@
           {
             "group": "Plattform",
             "pages": [
-              "plattform/intro",
               "plattform/ki-sourcing-agent",
               "plattform/intelligente-jobsites",
               "plattform/ats-integration",
