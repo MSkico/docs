@@ -14,12 +14,22 @@
         "tab": "Deep Dives",
         "groups": [
           {
+            "group": "Insights",
+            "pages": [
+              "insights/aktiv-vs-passiv",
+              "insights/inhouse-vs-partner",
+              "insights/kosten-und-kpis", 
+              "insights/marktueberblick"
+            ]
+          },
+          {
             "group": "Plattform",
             "pages": [
               "plattform/intro",
               "plattform/ki-sourcing-agent",
               "plattform/intelligente-jobsites",
               "plattform/ats-integration",
+              "plattform/success-managerin",
               "plattform/sourcing-quellen"
               
             ]
@@ -31,14 +41,7 @@
               "ki/ethik"
             ]
           },
-          {
-            "group": "Insights",
-            "pages": [
-              "insights/aktiv-vs-passiv",
-              "insights/inhouse-vs-partner",
-              "insights/kosten-und-kpis"
-            ]
-          },
+          
           {
             "group": "Compliance",
             "pages": [
