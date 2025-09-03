@@ -26,11 +26,11 @@
           {
             "group": "Plattform",
             "pages": [
-              "plattform/ki-sourcing-agent",
-              "plattform/intelligente-jobsites",
-              "plattform/ats-integration",
+              "plattform/sourcing-ki",
+              "plattform/intelligente-ansprache",
+              "plattform/ats-anbindung",
               "plattform/success-managerin",
-              "plattform/sourcing-quellen"
+              "plattform/multi-channel"
               
             ]
           },
