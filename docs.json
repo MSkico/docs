@@ -67,9 +67,9 @@
           "icon": "globe-pointer"
         },
         {
-          "anchor": "Unternehmen",
-          "href": "https://skillconomy.com/unternehmen",
-          "icon": "building"
+          "anchor": "Webinare",
+          "href": "https://skillconomy.com/webinar",
+          "icon": "graduation-cap"
         }
       ]
     }
