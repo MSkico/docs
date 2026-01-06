@@ -8,71 +8,162 @@
     "dark": "#0050B0"
   },
   "favicon": "/favicon.svg",
+  "redirects": [
+    { "source": "/", "destination": "/de/insights/intro" },
+
+    { "source": "/insights/intro", "destination": "/de/insights/intro" },
+    { "source": "/insights/aktiv-vs-passiv", "destination": "/de/insights/aktiv-vs-passiv" },
+    { "source": "/insights/inhouse-vs-partner", "destination": "/de/insights/inhouse-vs-partner" },
+    { "source": "/insights/kosten-und-kpis", "destination": "/de/insights/kosten-und-kpis" },
+    { "source": "/insights/marktueberblick", "destination": "/de/insights/marktueberblick" },
+
+    { "source": "/plattform/sourcing-ki", "destination": "/de/plattform/sourcing-ki" },
+    { "source": "/plattform/intelligente-ansprache", "destination": "/de/plattform/intelligente-ansprache" },
+    { "source": "/plattform/multi-channel", "destination": "/de/plattform/multi-channel" },
+    { "source": "/plattform/ats-anbindung", "destination": "/de/plattform/ats-anbindung" },
+    { "source": "/plattform/success-managerin", "destination": "/de/plattform/success-managerin" },
+
+    { "source": "/ki/unsere-ki", "destination": "/de/ki/unsere-ki" },
+    { "source": "/ki/ethik", "destination": "/de/ki/ethik" },
+
+    { "source": "/compliance/datenschutz", "destination": "/de/compliance/datenschutz" },
+    { "source": "/compliance/ki-regulierung", "destination": "/de/compliance/ki-regulierung" },
+    { "source": "/compliance/it-sicherheit", "destination": "/de/compliance/it-sicherheit" },
+    { "source": "/compliance/einkauf", "destination": "/de/compliance/einkauf" }
+  ],
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "Deep Dives",
-        "groups": [
+        "language": "de",
+        "tabs": [
           {
-            "group": "Insights",
-            "pages": [
-              "insights/intro", 
-              "insights/aktiv-vs-passiv",
-              "insights/inhouse-vs-partner",
-              "insights/kosten-und-kpis", 
-              "insights/marktueberblick"
-            ]
-          },
-          {
-            "group": "Plattform",
-            "pages": [
-              "plattform/sourcing-ki",
-              "plattform/intelligente-ansprache",
-              "plattform/multi-channel",
-              "plattform/ats-anbindung",
-              "plattform/success-managerin"              
-              
-            ]
-          },
-          {
-            "group": "Künstliche Intelligenz",
-            "pages": [
-              "ki/unsere-ki",
-              "ki/ethik"
-            ]
-          },
-          
-          {
-            "group": "Compliance",
-            "pages": [
-              "compliance/datenschutz",
-              "compliance/ki-regulierung",
-              "compliance/it-sicherheit",
-              "compliance/einkauf"
+            "tab": "Deep Dives",
+            "groups": [
+              {
+                "group": "Insights",
+                "pages": [
+                  "de/insights/intro",
+                  "de/insights/aktiv-vs-passiv",
+                  "de/insights/inhouse-vs-partner",
+                  "de/insights/kosten-und-kpis",
+                  "de/insights/marktueberblick"
+                ]
+              },
+              {
+                "group": "Plattform",
+                "pages": [
+                  "de/plattform/sourcing-ki",
+                  "de/plattform/intelligente-ansprache",
+                  "de/plattform/multi-channel",
+                  "de/plattform/ats-anbindung",
+                  "de/plattform/success-managerin"
+                ]
+              },
+              {
+                "group": "Künstliche Intelligenz",
+                "pages": [
+                  "de/ki/unsere-ki",
+                  "de/ki/ethik"
+                ]
+              },
+              {
+                "group": "Compliance",
+                "pages": [
+                  "de/compliance/datenschutz",
+                  "de/compliance/ki-regulierung",
+                  "de/compliance/it-sicherheit",
+                  "de/compliance/einkauf"
+                ]
+              }
             ]
           }
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Demo buchen",
-          "href": "https://calendly.com/skillconomy-kennenlernen/buchen?utm_source=&utm_campaign=",
-          "icon": "rocket"
-        },
-        {
-          "anchor": "Home",
-          "href": "https://skillconomy.com",
-          "icon": "globe-pointer"
-        },
-        {
-          "anchor": "Webinare",
-          "href": "https://skillconomy.com/webinar",
-          "icon": "graduation-cap"
+        ],
+        "global": {
+          "anchors": [
+            {
+              "anchor": "Demo buchen",
+              "href": "https://calendly.com/skillconomy-kennenlernen/buchen?utm_source=&utm_campaign=",
+              "icon": "rocket"
+            },
+            {
+              "anchor": "Home",
+              "href": "https://www.skillconomy.com/de/home",
+              "icon": "globe-pointer"
+            },
+            {
+              "anchor": "Webinare",
+              "href": "https://www.skillconomy.com/de/webinar",
+              "icon": "graduation-cap"
+            }
+          ]
         }
-      ]
-    }
+      },
+      {
+        "language": "en",
+        "tabs": [
+          {
+            "tab": "Deep Dives",
+            "groups": [
+              {
+                "group": "Insights",
+                "pages": [
+                  "en/insights/intro",
+                  "en/insights/active-vs-passive",
+                  "en/insights/inhouse-vs-partner",
+                  "en/insights/costs-and-kpis",
+                  "en/insights/market-overview"
+                ]
+              },
+              {
+                "group": "Platform",
+                "pages": [
+                  "en/platform/sourcing-ai",
+                  "en/platform/intelligent-outreach",
+                  "en/platform/multi-channel",
+                  "en/platform/ats-integration",
+                  "en/platform/success-manager"
+                ]
+              },
+              {
+                "group": "Artificial Intelligence",
+                "pages": [
+                  "en/ai/our-ai",
+                  "en/ai/ethics"
+                ]
+              },
+              {
+                "group": "Compliance",
+                "pages": [
+                  "en/compliance/privacy",
+                  "en/compliance/ai-regulation",
+                  "en/compliance/it-security",
+                  "en/compliance/procurement"
+                ]
+              }
+            ]
+          }
+        ],
+        "global": {
+          "anchors": [
+            {
+              "anchor": "Book a demo",
+              "href": "https://calendly.com/skillconomy-kennenlernen/demo-en",
+              "icon": "rocket"
+            },
+            {
+              "anchor": "Home",
+              "href": "https://www.skillconomy.com/en/home",
+              "icon": "globe-pointer"
+            },
+            {
+              "anchor": "Webinars",
+              "href": "https://www.skillconomy.com/en/webinar",
+              "icon": "graduation-cap"
+            }
+          ]
+        }
+      }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",

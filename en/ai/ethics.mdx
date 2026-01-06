@@ -1,0 +1,139 @@
+---
+title: 'Responsible AI'
+description: 'Reducing discrimination in recruiting with AI'
+---
+
+
+# The Opportunities of AI
+
+Responsible AI in recruiting offers a real opportunity to systematically reduce discrimination. All patterns of discrimination that manifest in an AI originate from historical discrimination through human decisions. By identifying and removing these biases in AI, AI can help drastically reduce the actual extent of discrimination compared to the status quo. Through clear ethical guidelines and active research, we aim to ensure that candidates are actually selected based on individual skills and suitability—rather than stereotypes based on gender, origin, age, or other personal characteristics—thanks to AI.
+
+<Check>
+With AI, discrimination and violations of fundamental rights can be systematically reduced compared to human decision-making processes! We see ourselves as pioneers in the development of suitable AI for this purpose.
+</Check>
+
+We see ourselves not only as pioneers in the development of powerful AI systems for active sourcing, but also in the implementation and further development of the *state of the art* regarding responsible AI. This concerns not only, but especially the following topics:
+
+- Fundamental rights regarding the use of data for AI training
+- Fundamental rights in the application of AI in general
+- The fundamental right to non-discrimination in particular
+
+In this article, we specifically want to address what we are doing to prevent discrimination, as this is an area with significant potential impact (both positive and negative) and high technical complexity.
+
+# 100% human-in-the-loop
+
+Regardless of all efforts to advance and innovate in the field of responsible AI, we will continue to conduct 100% quality control of AI results by highly qualified employees for the foreseeable future. In particular, AI-generated shortlists are reviewed by highly qualified employees with several years of professional experience in active sourcing before they are used to approach candidates. Through human oversight, we obtain structured and representative quality data, which we feed back into the development process.
+
+# Dataset Design
+
+An indispensable approach to avoiding bias in AI systems is the design and monitoring of training data. In this regard, we take the following measures:
+
+### No Discriminatory Features in Data
+
+According to the **General Equal Treatment Act (AGG)** (§1 AGG) and **Article 21 of the Charter of Fundamental Rights of the European Union (CFR)**, it is not permissible to disadvantage people based on certain personal characteristics. These principles apply not only to humans as acting agents, but also to the **use of automated systems**, such as in the context of AI-based recruiting. The EU AI Act, for example, explicitly refers to Art. 21 CFR.
+
+The AGG (§1) protects against discrimination based on:
+
+- **Race** or **ethnic origin**
+- **Gender**
+- **Religion** or **belief**
+- **Disability**
+- **Age**
+- **Sexual identity**
+
+Article 21 (1) CFR prohibits discrimination in particular on the grounds of:
+
+- **Gender**
+- **Race**
+- **Color**
+- **Ethnic or social origin**
+- **Genetic features**
+- **Language**
+- **Religion** or **belief**
+- **Political or any other opinion**
+- **Membership of a national minority**
+- **Property**
+- **Birth**
+- **Disability**
+- **Age**
+- **Sexual orientation**
+- **Nationality**
+
+We do not use any direct features associated with these legally protected categories in connection with our AI system. This applies both to our training data and to the data used in the operational operation of our AI systems. By doing so, we ensure that the systems do not explicitly learn or reproduce discriminatory patterns based on such features.
+
+### No Avoidable "High-Risk Proxies" in Data
+
+The removal of direct discriminatory features from data (in training and usage) is not sufficient to avoid patterns of discrimination. Powerful AI models like ours are capable of inferring discriminatory features from even very weakly correlated other features and thus learning corresponding patterns. A relatively obvious example: An AI could infer ethnic origin from the name of an educational institution. Such indirect features are called proxies or proxy features.
+
+We classify attributes of our data with regard to their risk of contributing to discrimination as a proxy in this way. If this risk is assessed as high, we remove the features unless they are absolutely necessary for the functionality of the AI model. These are in particular:
+
+- Name components
+- Work location
+- Dates/years that are more than 10 years in the past (as a proxy for age)
+
+# Debiasing Technology
+
+Even if the data-related measures described above are conscientiously implemented, this is still no guarantee that the model's results are completely free of discrimination. First, the model may still infer discriminatory features from weak proxies under certain circumstances. Second, not all strong proxies can be dispensed with for the functionality of the model. It is therefore necessary to take measures at the model level (as opposed to the data level). These measures are referred to as *debiasing*.
+
+### What is Debiasing?
+
+Debiasing refers to measures to uncover discriminatory structures in AI models and to technically counteract them. There are some proven approaches from science and practice, but they cannot be applied *plug & play*. Implementation requires adaptation to the specific model, the application context, and the types of bias involved. The scientific discussion of AI bias and debiasing is currently ongoing and thus dynamic. We continuously monitor current developments and contribute with our own research and development.
+
+### Our Own Research and Development on Debiasing
+
+We have developed a technology for the active removal of bias that is specifically tailored to our AI model. This technology incorporates the latest state of the art and is supplemented by our own innovative developments.
+
+Our debiasing technology is based on an interplay between the base AI model and two additional AI models: In simplified terms, its mode of action can be described as follows: after training the base model (for creating shortlists), another model is trained to recognize discriminatory features as precisely as possible from certain intermediate results of the base model ("discriminator").
+
+In addition, components are integrated at specific points in the base model that act as adversaries to the discriminator. They are intended to modify the (intermediate) results of the base model so that the result quality remains high, but the discriminator is prevented from recognizing discriminatory features. We refer to these components as the model's "immune system." The discriminator and immune system are trained simultaneously until it is no longer effectively possible to recognize discriminatory features. The immune system "remains" in the model and ensures discrimination-free results during productive operation.
+
+<img
+  style={{ borderRadius: '0.5rem' }}
+  src="/images/kb-visual-debiasing.jpg"
+/>
+
+# Frequently Asked Questions
+
+<AccordionGroup>
+
+  <Accordion title="How does skillconomy ensure that no discrimination occurs through AI?">
+    We pursue a multi-layered approach:  
+    - **No direct discriminatory features** in training or usage data  
+    - **Elimination of strong proxies** (e.g., name, age, location)  
+    - Use of a **proprietary debiasing technology**  
+    - **100% human control** of the final results  
+    This ensures that discrimination is systematically identified and prevented.
+  </Accordion>
+
+  <Accordion title="Which features are legally considered sensitive to discrimination?">
+    According to the **AGG** (§1) and **Art. 21 of the EU Charter of Fundamental Rights**, the following features, among others, may not lead to disadvantage:  
+    Gender, ethnic origin, religion, disability, age, sexual identity, language, political opinion, property, or nationality.
+  </Accordion>
+
+  <Accordion title="How does skillconomy handle proxy features?">
+    We systematically analyze every data attribute for its risk of acting as a **proxy for protected features**.  
+    High-risk proxies such as **name components**, **graduation years**, or **work locations** are consistently removed—unless absolutely necessary for model functionality.
+  </Accordion>
+
+  <Accordion title="What does 'debiasing' mean in the context of AI?">
+    Debiasing refers to procedures for the **technical removal of discriminatory patterns** in models.  
+    This includes, among other things, special architectures that neutralize protected features without significantly impairing result quality.
+  </Accordion>
+
+  <Accordion title="What is special about skillconomy's debiasing technology?">
+    We use a proprietary method that combines a **base AI model**, a **discriminator**, and a so-called **'immune system'**.  
+    The goal is to neutralize discriminatory patterns so that they can no longer be detected by the discriminator—while maintaining high model quality.
+  </Accordion>
+
+  <Accordion title="Are your AI results reviewed?">
+    Yes—we follow a **100% human-in-the-loop approach**.  
+    All shortlists are fully reviewed by experienced recruiters before any outreach occurs.
+  </Accordion>
+
+  <Accordion title="Does that mean your AI is completely free of discrimination?">
+    No system is perfect—not even our AI.  
+    But we do everything we can to **identify and effectively prevent discrimination**—through technology, oversight, and ethical guidelines.
+  </Accordion>
+
+</AccordionGroup>
+
